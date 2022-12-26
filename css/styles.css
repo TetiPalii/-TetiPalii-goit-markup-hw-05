@@ -82,6 +82,8 @@ p {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -121,6 +123,7 @@ p {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
@@ -131,7 +134,6 @@ p {
 .contact-link:hover,
 .contact-link:focus {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -141,7 +143,6 @@ p {
 .contact-footer:hover,
 .contact-footer:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-section {
@@ -196,6 +197,9 @@ p {
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-buttons {
@@ -225,14 +229,16 @@ p {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   color: var(--text-color);
   background-color: var(--hero-button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -241,9 +247,6 @@ p {
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-container {
@@ -423,14 +426,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   color: var(--text-color);
   background-color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-element:not(:last-child) {
@@ -439,14 +443,16 @@ p {
 
 .portfolio-link {
   display: block;
+
   color: var(--primary-color);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-heading {
@@ -532,17 +538,20 @@ p {
   height: 100%;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .icon-client {
   fill: currentColor;
 }
@@ -554,6 +563,7 @@ p {
 .flex-footer {
   display: flex;
 }
+
 .footer {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
@@ -579,6 +589,8 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons {
@@ -613,10 +625,12 @@ p {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
@@ -640,6 +654,8 @@ p {
   right: 0;
   width: 30px;
   height: 30px;
+  margin-top: 8px;
+  margin-right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #fff;
